@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* outline: none; */
+    /* border: none; */
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 5rem 7rem;
+}
+
+footer{
+    padding: 5rem 7rem;
+}
+
+/* .navbar{
+    background-color: #6c9994;
+    opacity: 0.129;
+    color: black;
+    width: 100%;
+    text-align: end;
+    padding: 5px 0;
+} */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    position: fixed;
+    background: #fff;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+ header .navbar a{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: black; 
+    padding: 2.5rem 2.5rem;
+}
+
+header .navbar a:hover{
+    color: #44847e;
+}
+
+header #toggler{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.home{
+    margin-top: 12rem;
+}
+
+.home .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .row .image-container {
+    position: relative;
+    flex: 1 1 40rem;
+}
+
+.home .row .image-container .img1{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 56%;
+    border: .4rem solid #44847e;
+}
+
+.home .row .image-container .img2{
+       position: absolute;
+    top: -109px;
+    right: 0px;
+    left: 47px;
+    width: 86%;
+    z-index: -1;
+}
+
+.home .row .content{
+    flex: 1 1 40rem;
+}
+
+.home .content h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #6c9894;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 9rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.home .content p{
+    font-family: 'Montserrat', sans-serif;
+    color: #6c9894;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    /* width: 500px; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home .content .btn{
+    padding: 9px 49px;
+    color: #fefefc;
+    background-color: #6c9894;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 38px;
+    font-size: 15px;
+    margin: 15px auto 0;
+    display: block;
+}
+
+.class{
+    background-color: #6c9894;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 5.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 2px;
+    /* line-height: 6.3rem; */
+}
+
+.heading-2{
+    color: #6c9894;
+    text-align: center;
+    font-size: 5.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 2px;
+}
+
+.pera{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+
+}
+
+.pera-2{
+    color: #6c9894;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1px; 
+}
+
+.class .box-container{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 1.5rem;
+       padding-top: 5rem;
+       padding-bottom: 5rem;
+}
+
+.class .box-container .box{
+    flex: 1 1 25rem;
+    text-align: center;
+}
+
+.class .box-container .box img{
+    border-radius: 50%;
+    border: .4rem solid rgba(255, 255, 255, 0.727);
+}
+
+.class .box-container .box .info h3{
+    color: #f4f9f4;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.class .box-container .box .info p{
+    color: #f4f9f4;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.stars{
+    background: url(../img/pic1.png) no-repeat center center / cover;
+    /* min-width: 100vh; */
+    background-attachment: fixed;        /*new */
+}
+
+.stars .circul-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.stars .circul-container .circul{
+    flex: 1 1 25rem;
+    text-align: center;
+    /* border: .4rem solid #6c9894; */
+    /* border-radius: 50%; */
+    /* padding: 10rem 0; */
+}
+
+.stars .circul-container .circul span{
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 7.3rem;
+}
+
+.stars .circul-container .circul p{
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+
+
+
+.instructor{
+    /* background: url(../img/img5.png); */
+    background-color: #6c9894;
+}
+
+.instructor .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.instructor .row .content{
+    flex: 1 1 40rem;
+}
+
+.instructor .row .content h2{
+    color: #f4f9f4;
+    font-size: 5.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 2px;
+}
+
+.instructor .row .content p{
+    color: #f4f9f4;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+}
+
+.instructor .row .content .btn-2{
+    background-color: #f4f9f4;
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 7px 55px;
+    margin-top: 3rem;
+}
+
+
+.experience .row{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* gap: 2rem; */
+    justify-content: space-around;
+}
+
+.experience .row .content h2{
+    color: #6c9894;
+    font-size: 5.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    letter-spacing: 2px;
+}
+
+.experience .row .content p{
+    color: #6c9894;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;   
+}
+
+.experience .row .content .btn-3{
+    background-color: #6c9894;
+    color:  #f4f9f4;
+    font-family: 'Baloo Bhai 2', cursive;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 7px 55px;
+    margin-top: 3rem;
+}
+
+.price{
+    background-color: #6c9894;
+}
+
+.price .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding-top: 5rem;
+}
+
+.price .card-container .card{
+    flex: 1 1 25rem;
+    text-align: center;
+    background-color: #eee;
+    padding: 2rem 2rem;
+    border-radius: .7rem;
+}
+
+.price .card-container .card h3{
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+.price .card-container .card h4{
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.price .card-container .card p{
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 3.5rem 0 1.5rem;
+}
+
+.price .card-container .card button{
+    background-color: #6c9894;
+    color: #eee;
+    font-family: 'Baloo Bhai 2', cursive;
+    border: none;
+    padding: 1rem 8.5rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.trainer{
+    background: url(../img/pic2.png) no-repeat center center / cover;
+}
+
+.trainer .container{
+    text-align: center;
+}
+
+.trainer .container img{
+    border-radius: 50%;
+    margin-bottom: 4.5rem;
+    border: .4rem solid  #6c9894; ;
+}
+
+.trainer .container p{
+    color: #6c9894;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+.trainer .container h3{
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+}
+
+.update{
+    background-color: #6c9894;
+}
+
+.update .input{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.update .input input{
+    border: none;
+    padding: 14px 25px 14px 25px;
+    width: 42%;
+    border-radius: 30px;
+    color: #6c9894;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.update .input span{
+    background-color: #f4f9f4;
+    color: #6c9894;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1.4rem 3rem;
+    border-radius: 30px;
+}
+
+
+.footer .box-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 6.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25px;
+}
+
+.footer .box-container .box h3{
+    color: #6c9894;
+     font-size: 2.5rem;
+     padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    color: #6c9894;
+    font-size: 1.7em;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #6c9894;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    font-size: 2.5rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #6c9894;
+    border-top: .1rem solid ;
+}
+
+.footer .credit span{
+    color: #6c9894;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+
+     html{
+        font-size: 55%;
+     }
+
+     section{
+        padding:4rem;
+     }
+
+     .home .content h1{
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .home .content .btn{
+        padding: 7px 36px;
+        font-size: 12px;
+    } 
+
+    .experience .row .image img{
+        width: 85%;
+    }
+
+    .experience .row .content h2{
+        font-size: 4rem;
+    }
+
+    .experience .row .content p{
+        font-size: 1.8rem;
+    }
+
+  
+
+}
+
+@media(max-width:768px){
+
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        top:-100vh ;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition:0.4s ;
+    }
+
+    header .navbar.active{
+        top: 100%;
+    }
+
+    header .navbar a{
+        border: .1rem solid rgba(0,0,0,.1);
+        background: #fff;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        display: block;
+    }
+
+    header .logo img{
+        width: 70%;
+    }
+
+    .home .content h1{
+       margin-top: 3rem;
+    }
+
+    .experience .row{
+        flex-wrap: wrap;
+    }
+
+    .experience .row .image img{
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .experience .row .content h2{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .experience .row .content p{
+        text-align: center;
+
+    }
+
+    .experience .row .content .btn-3{
+        margin: 2.5rem auto;
+        display: block;
+    }
+
+    .price .card-container .card button{
+        font-size: 1.4rem;
+    }
+
+    .footer .box-container{
+        display: block;
+    }
+
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header .logo img{
+        width: 60%;
+    }
+    .class .box-container .box img{
+        width: 80%;
+    }
+   
+    .update .input input{
+        width: 65%;
+    }
+
+}
+
+@media (max-width:280px){
+
+    html{
+        font-size: 38%;
+    }
+
+    .trainer .container img{
+        width: 90%;
+    }
+}
